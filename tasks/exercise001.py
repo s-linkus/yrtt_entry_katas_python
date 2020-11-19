@@ -6,4 +6,8 @@
 # Good luck!
 
 def repeats(arr):
-    return
+    sum_singles=0
+    for n in arr:
+        if arr.count(n) == 1:
+            sum_singles=sum_singles + n
+    return(sum_singles)

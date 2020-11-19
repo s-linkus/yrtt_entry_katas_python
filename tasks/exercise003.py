@@ -22,4 +22,15 @@
 # The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 def row_weights(array):
-    return
+    ttl_team1 = 0
+    team1 = array[::2]
+    for n in team1:
+        ttl_team1 = ttl_team1 + n
+
+    ttl_team2 = 0
+    team2 = array[1::2]
+    for m in team2:
+        ttl_team2 = ttl_team2 + m
+
+    ttl_weights = ([ttl_team1, ttl_team2])
+    return(ttl_weights)

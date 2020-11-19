@@ -6,12 +6,18 @@ import pytest
 
 from tasks.exercise002 import past
 
-def test_exercise_past():
 
-    assert past(0,1,1) == 61000
+def test_exercise1_past():
+    assert past(0, 1, 1) == 61000
+
+def test_exercise2_past():   
     assert past(1,1,1) == 3661000
+    
+def test_exercise3_past():
     assert past(1,0,1) == 3601000
+
+def test_exercise4_past():
     assert past(1,0,0) == 3600000
 
-def test_exercise_check_past_no_difference():
+def test_exercise5_check_past_no_difference():
     assert past(0,0,0) == 0
