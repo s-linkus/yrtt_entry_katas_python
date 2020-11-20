@@ -4,8 +4,10 @@ import pytest
 
 from tasks.exercise004 import pig_it
 
-def test_pig_latin_returns_string():
+def test_pig_latin_returns_string_1():
     assert pig_it("Pig latin is cool") == "igPay atinlay siay oolcay"
+    
+def test_pig_latin_returns_string_2():    
     assert pig_it("This is my string") == "hisTay siay ymay tringsay"
 
 def test_pig_latin_punctuation():
