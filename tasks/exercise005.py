@@ -19,4 +19,9 @@
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 def wave(people):
-    return
+    arr = []
+    for i in range(len(people)):
+        if people[i] != " ":
+            arr.append(people[:i] + people[i].upper() + people[i+1:])
+
+    return(arr)
